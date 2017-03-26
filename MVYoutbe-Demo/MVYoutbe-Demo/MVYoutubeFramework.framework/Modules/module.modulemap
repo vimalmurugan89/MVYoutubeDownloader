@@ -1,0 +1,6 @@
+framework module MVYoutubeFramework {
+  umbrella header "MVYoutubeFramework.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0U-aP-jND">
+                                <rect key="frame" x="124" y="74" width="138" height="41"/>
+                                <color key="backgroundColor" red="0.61593103189999998" green="1" blue="0.67876760849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="WRU-hh-iiB"/>
+                                    <constraint firstAttribute="height" constant="41" id="gzi-d3-TDL"/>
+                                </constraints>
+                                <state key="normal" title="Get Video Info"/>
+                                <connections>
+                                    <action selector="getVideoInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oXY-PK-IpO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FmH-Ss-yns">
+                                <rect key="frame" x="124" y="132" width="138" height="41"/>
+                                <color key="backgroundColor" red="0.6159310319474498" green="1" blue="0.67876760847386475" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="8ec-LZ-nij"/>
+                                    <constraint firstAttribute="width" constant="138" id="gIV-pr-0ep"/>
+                                </constraints>
+                                <state key="normal" title="Download"/>
+                                <connections>
+                                    <action selector="downloadVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i7l-sb-qvh"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="4Ic-86-fkV">
+                                <rect key="frame" x="177" y="318" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="Ncp-27-gRj"/>
+                                    <constraint firstAttribute="height" constant="20" id="xGR-0X-apM"/>
+                                </constraints>
+                                <color key="color" red="1" green="0.27458147319999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FmH-Ss-yns" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="5.5" id="1gx-Nl-FhX"/>
+                            <constraint firstItem="4Ic-86-fkV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-5.5" id="5ZX-iv-sUK"/>
+                            <constraint firstItem="FmH-Ss-yns" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="112" id="7h8-dh-hxF"/>
+                            <constraint firstItem="z0U-aP-jND" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="54" id="OpM-0d-7Tq"/>
+                            <constraint firstItem="z0U-aP-jND" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-239" id="P02-wa-eTt"/>
+                            <constraint firstItem="z0U-aP-jND" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="5.5" id="Wjl-9c-kcK"/>
+                            <constraint firstItem="4Ic-86-fkV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eMn-lL-xY3"/>
+                            <constraint firstItem="FmH-Ss-yns" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-181" id="kAi-Iz-1sa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="4Ic-86-fkV" id="PKo-Wa-bEG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
