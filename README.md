@@ -7,7 +7,7 @@ I strongly recommend you all to use this for personal use. For me it requires to
 # MVYoutube
      This is the base class which has two functions one is download the video from youtube with specific fomrat. Another one is helping you retrieve the video information and download  urls.
      Those methods are,
-             1. -(void)getYoutubeVideoInformationForId:(NSString*)videoId hadnler:(CompletionHandler)handler;
+             1. -(void)getYoutubeVideoInformationForId:(NSString*)videoId handler:(CompletionHandler)handler;
              2. -(void)downloadYoutubeVideoForId:(NSString*)videoId format:(DownloadFormat)format type:(DownloadType)type handler:(DownloadHandler)handler
              
      Apart from this two method, It has one more method to check available video format.
@@ -27,7 +27,7 @@ I strongly recommend you all to use this for personal use. For me it requires to
      
 # How to get youtube video information?
       You just need to passs the videoId from youtube URL,
-      [[MVYouTube sharedMVTube]getYoutubeVideoInformationForId:@"dKzl_82PbU4" hadnler:^(NSArray<MVYouTubeObj *> *array,    NSError *error) {
+      [[MVYouTube sharedMVTube]getYoutubeVideoInformationForId:@"dKzl_82PbU4" handler:^(NSArray<MVYouTubeObj *> *array,    NSError *error) {
         
         [array enumerateObjectsUsingBlock:^(MVYouTubeObj * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             NSLog(@"data==%@",obj.quality);
