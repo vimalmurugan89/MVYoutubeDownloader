@@ -45,7 +45,9 @@ I strongly recommend you all to use this for personal use. For me it requires to
         [data writeToFile:@"~/Desktop/test.3gpp" atomically:YES];
     }];
     
-Note: If scheme is missing in the repo. then click manage scheme and then add MVYoutube-Demo. then run it should work like charm. enjoy    
+Note: If scheme is missing in the repo. then click manage scheme and then add MVYoutube-Demo. then run it should work like charm,enjoy.
+
+Let me know if anything needs to added into this library.
     
     
     
