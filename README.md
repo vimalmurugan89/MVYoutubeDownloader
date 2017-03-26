@@ -1,6 +1,6 @@
 # MVYoutubeDownloader
 
-I am here with releasing this library to all. whom need capability to get video information from youtube. 
+I am here with releasing this library to all. whom needs to get video information from youtube. 
 
 I strongly recommend you all to use this for personal use. For me it requires to save some local videos for study purpose.As of now this been developed for ios alone. Moving forward same will be released to different platform like android, ruby and python etc, Swift version of code will be available soon.
 
