@@ -23,7 +23,7 @@ I strongly recommend you all to use this for personal use. For me it requires to
              
 # How to use this?
     
-     Download this repo and import the MVYoutbe.Framework. No additional steps are required.
+     Download this repo and import the MVYoutbeFramework.Framework. No additional steps are required. Attahced sample app also please cross check it.
      
 # How to get youtube video information?
       You just need to passs the videoId from youtube URL,
